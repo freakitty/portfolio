@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no">
+    <title>portfolio Cindy Castano</title>
+    <meta name="description" content="Portfolio of Castano Cindy. Graphic Designer based in Paris - web - design - print">
+    <meta name="keywords" content="designer, graphic, web, webdesigner, paris, france, ui, ux, design, print, user, experience, front, end">
+    <meta name="author" content="Castano Cindy">
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/global.css" type="text/css">
+    <link rel="stylesheet" href="css/media-queries.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700,100,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<!-- ******** HOME ********* -->
+   
+    <div id="burger"><!-- BURGER -->
+        <div class="navbar">
+            <ul>
+                <li><a id="burger-home" href="index.html">HOME</a></li>
+                <li><a id="burger-works" href="#">WORKS</a></li>
+                <li><a id="burger-about" href="#">ABOUT</a></li>
+                <li><a id="burger-contact" href="#">CONTACT</a></li>
+            </ul>
+        </div>
+
+    <div id="hamburger-button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+   </div> <!-- FIN BURGER -->
+   
+    <nav> 
+        <ul id="menu">
+            <li class="button" id="works-button">WORKS</li>
+            <li class="button" id="about-button">ABOUT</li>
+            <li class="button" id="contact-button">CONTACT</li>
+            <li class="button" id="name-button">Cindy Castano - Graphic/web Designer</li>
+        </ul>
+        
+    <img src="images/logo.png" alt="personnal logo" id="logo">
+    <h1>Cindy Castano - <br> Graphic/web Designer</h1>
+            
+    </nav><!-- ************* FIN HOME ************* -->
+        
+    <div id="works"><!-- ******** WORKS ********* -->
+        <h3>WORKS</h3>
+        <div id="flex">
+           
+            <div class="items">
+                <a href="capitales.html"><img src="images/capitales/_MG_4765.JPG" alt="projet capitales insolites"></a>
+            </div>
+            
+            <div class="items">
+                <a href="lausanne-typography.html"><img src="images/Lausanne/couv.jpg" alt="modular typography"></a>
+            </div>
+            
+            <div class="items">
+                <a href="school-book.html"><img src="images/schoolbooks/cover-schoolbook.jpg" alt="scholar book"></a>
+            </div>
+            
+            <div class="items">
+                <a href="sed.html"><img src="images/sed/coversed.jpg" alt="sed"></a>
+            </div>
+            
+            <div class="items">
+                <a href="elixir.html"><img src="images/elixir/coverelixir.jpg" alt="elixir by dior"></a>
+            </div>
+            
+            <div class="items">
+                <a href="melisso.html"><img src="images/Melissopoulos/covermelisso.jpg" alt="melissopoulos"></a>
+            </div>
+            
+            <div class="items">
+                <a href="photo.html"><img src="images/f10/coverf10.jpg" alt="f/10 exposition photo"></a>
+            </div>
+            
+            <div class="items">
+                <a href="milkyway.html"><img src="images/f10/coverf10.jpg" alt="f/10 exposition photo"></a>
+            </div>
+        </div>
+    </div><!-- ******** FIN WORKS ********* -->
+        
+    <div id="about"><!-- ******** ABOUT ********* -->
+        <h3>ABOUT</h3>
+        <div id="console">
+            <span class="placeholder">Start typing</span>
+            <span id="hey"></span>
+            <span class="cursor">&nbsp;</span>
+        </div>
+        <div id="consolequeries">
+        <p id="aboutqueries">
+            Hey there ! <br> 
+            I'm Cindy Castano, <br>
+            print graphic and front end / web designer based in Paris . Powered by creativity I'll be glad to help you, let's do stuff together .
+        </p>
+        <span class="cursor">&nbsp;</span>
+        </div>
+    </div> <!-- ******** FIN ABOUT ********* -->
+        
+    <div id="contact"><!-- ******** CONTACT ********* -->
+        <h3>CONTACT</h3>
+        <div id="flexitude">
+           <span>
+               <a href="https://fr.linkedin.com/in/cindy-castano-18830684" target="_blank"><img src="images/icons/linkedin.png" alt="linkedin logo" class="icon"></a>
+           </span>
+           <span>
+               <img src="images/icons/mail.png" alt="icon mail" id="mail" class="icon">
+           </span>
+            <span>
+              <a href="images/CV-CindyCastano.pdf" target="_blank"><img src="images/icons/cv.png" alt="icon CV" class="icon"></a>  
+            </span>
+        </div>
+        <div id="form">
+             <form action="send.php" name="contact" method="post">
+               <img src="images/icons/close.png" alt="close button" id="close">
+                <input type="text" name="name" placeholder="Name" class="feedback-input"> <br>
+                <input type="email" name="email" placeholder="Email" class="feedback-input" required> <br>
+                <hr>
+                <textarea name="message" placeholder="Message" class="feedback-input"></textarea>
+                <input type="submit" value="Send"> 
+            </form>
+        </div>
+    </div><!-- ******** FIN CONTACT ********* -->
+        
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/moteur.js"></script> 
+</body>
+</html>

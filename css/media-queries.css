@@ -1,0 +1,78 @@
+@media screen and (min-width:769px){
+    #burger{display: none;}
+    h1{display: none;}
+    h3{display: none;}   
+}
+@media screen and (min-width:801px){
+    #queriesslider{display: none;}
+    #consolequeries{display: none;}    
+
+}
+
+@media screen and (max-width:1280px){
+    .bottom{font-size: 40px;}
+    #txt{font-size: 40px;margin-top: 50px ;}
+}
+
+@media screen and (max-width:1080px){
+    .items {height: 150px; width: 150px; margin: 10px;}
+    .items>a>img{width: 150px;height: 150px;}
+    #console{font-size: 1.7em; line-height: 70px;}
+}
+
+@media screen and (max-width:960px){.items {margin: 5px; max-height: 70%;}}
+@media screen and (max-width:800px){    
+    .wrapSlider{display: none;}
+    p{margin-top: 50px;}
+    body{overflow-y: scroll;}
+    #txt{margin-top: 30px ;}
+    #queriesslider>p{padding-top: 30px;}
+    .placeholder{display: none;}
+    #console{display: none;}
+    #consolequeries{font-size: 1.5em;line-height: 50px;bottom:}
+}
+@media screen and (max-width:768px){
+    #menu{display: none;}
+    #burger{display: block;}
+    h1{display: block;}
+    h3{display: block;}
+    .items {height: 140px; width: 140px; margin: 10px; max-height: 70%;}   
+    .items>a>img{width: 140px;height: 140px;}
+    .bottom{font-size: 30px;}
+    #txt{font-size: 30px; margin-top: 50px ;}
+    
+}
+
+@media screen and (max-width:600px){
+    .items {height: 130px; width: 130px; margin: 5px;}
+    #consolequeries{line-height: 40px;}
+    .items>a>img{width: 130px;height: 130px; margin: 5px}
+    .headerInfos{height: 30%;width: 79.2%;}
+    .contact{width: 70%;}
+    #txt{margin-top: 50px;}
+    #goback{margin: 20px;}
+    #queriesslider>p{max-width: 250px; margin-top: 50px;}
+}
+
+@media screen and (max-width:480px){
+    .items {max-height: 60%;height: 120px; width: 120px;}
+    .headerInfos{height: 30%; width: 69.5%;}
+    #consolequeries{font-size: 1.2em;}
+    .items>a>img{width: 120px;height: 120px;}
+    #flex{min-height: 80%; min-width: 90%;}
+    #goback>span{width: 30px;}
+    #txt{margin-top: 30px;}
+    #close{margin-left: 117%;}
+    #flexitude>span{width: 50%;}
+    .icon{width: 70%;}
+    #flexitude>span{margin: 70px;}
+    .feedback-input{font-size: 0.6em;}
+    
+}
+
+@media screen and (max-width:320px){
+    .items{height: 110px; width: 110px;}
+    .items>a>img{width: 110px;height: 110px;}
+    #flex{max-height: 50%;}
+    #consolequeries{bottom: 50px; line-height: 25px;}
+}
