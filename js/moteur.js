@@ -6,19 +6,58 @@ $(function () {
 /********* 
 SLIDE PAGE 
 *********/
+    // sub : H router
+    function getH () {return window.location.hash}
+    function setH (h) {window.location.hash = h}
+    
+    function tweenreset() {
+        TweenMax.to('#about', 0.7, {left: '-100%'});
+        TweenMax.to('#works', 0.7, {top: '-100%'});
+        TweenMax.to('#contact', 0.7, {left: '100%'});
+    }
+    // HIGHLY EXPERIMENTAL
+//    function toAbout() {
+//        tweenreset();
+//        TweenMax.to('#about', 0.7, {left: 0});
+//    };
+    function toWorks () {
+        TweenMax.to('#works', 0.7, {top: 0});
+        $('#menu>li').css('color', 'white');
+        $('#hamburger-button>span').css('background-color', 'white');
+        $('.navbar').css('color', 'white');
+        $('.navbar').css('background-color', '#282a29');
+        $('.navbar>ul>li').css('border-bottom', '1px solid #fff');
+    }
+
+    function toView (route) {
+        switch(route){
+            case '#works':
+                setH(route);
+                toWorks();
+                break ;
+            default:
+                tweenreset();
+                setH('');
+        }
+    }
+    window.addEventListener("hashchange",console.log('test'));
     $("#works-button, #burger-works").on('click', function () {
         if ($('#works').offset().top < 0) {
-            TweenMax.to('#works', 0.7, {top: 0});
-            TweenMax.to('#about', 0.7, {left: '-100%'});
-            TweenMax.to('#contact', 0.7, {left: '100%'});
-            $('#menu>li').css('color', 'white');
-            $('#hamburger-button>span').css('background-color', 'white');
-            $('.navbar').css('color', 'white');
-            $('.navbar').css('background-color', '#282a29');
-            $('.navbar>ul>li').css('border-bottom', '1px solid #fff');
+            tweenreset();
+            toView('#works');
+//            toWorks();
+//            TweenMax.to('#works', 0.7, {top: 0});
+//            TweenMax.to('#about', 0.7, {left: '-100%'});
+//            TweenMax.to('#contact', 0.7, {left: '100%'});
+//            $('#menu>li').css('color', 'white');
+//            $('#hamburger-button>span').css('background-color', 'white');
+//            $('.navbar').css('color', 'white');
+//            $('.navbar').css('background-color', '#282a29');
+//            $('.navbar>ul>li').css('border-bottom', '1px solid #fff');
         } else {
             //$('#works').offset().top > 0;
-            TweenMax.to('#works', 0.7, {top: '-100%'});
+//            TweenMax.to('#works', 0.7, {top: '-100%'});
+            toView('home');
             $('#menu>li').css('color', '#40ffbf');
             $('.navbar').css('color', '#40ffbf');
             $('#hamburger-button>span').css('background-color', '#40ffbf');
@@ -59,6 +98,10 @@ SLIDE PAGE
         TweenMax.to('#works', 0.7, {top: '-100%'});
         TweenMax.to('#contact', 0.7, {left: '100%'});
     }
+    function toAbout() {
+        tweenreset();
+        TweenMax.to('#about', 0.7, {left: 0});
+    };
     $('#name-button').on('click', function () {
         tweenreset();
         $('#menu>li').css('color', '#40ffbf');
@@ -231,4 +274,6 @@ CONTACT FORM
     $('#close').click(function () {
         closemail();
     });
+    
+    toView(getH());
 });
