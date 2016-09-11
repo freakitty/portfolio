@@ -72,7 +72,7 @@ SLIDE PAGE
  GO BACK BUTTON 
  *************/
     $('#goback').on('click', function () {
-        window.open('/index.html#works', '_self');
+        window.open('index.html#works', '_self');
     });
    /* var hash = $(location).attr('hash');
     if ($hash !=n'')
