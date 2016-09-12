@@ -55,10 +55,10 @@
 }
 
 @media screen and (max-width:480px){
-    .items {max-height: 60%;height: 120px; width: 120px;}
+    .items {max-height: 60%;height: 90px; width: 90px;}
     .headerInfos{height: 30%; width: 69.5%;}
-    #consolequeries{font-size: 1.2em;}
-    .items>a>img{width: 120px;height: 120px;}
+    #consolequeries{font-size: 1.2em;bottom: 30px;}
+    .items>a>img{width: 90px;height: 90px;}
     #flex{min-height: 80%; min-width: 90%;}
     #goback>span{width: 30px;}
     #txt{margin-top: 30px;}
