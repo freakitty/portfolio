@@ -1,6 +1,6 @@
 <?php
     $mailwebmaster="castano.cindy1@gmail.com";
-    $subject="You got mail from : ".$_POST["name"];
+    $subject="You got mail from : ".$_POST["email"];
     $edito=$_POST["message"];
     $email=$_POST["email"];
     $mailheader="From:$email\n";
