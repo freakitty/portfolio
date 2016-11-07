@@ -57,7 +57,7 @@
 @media screen and (max-width:480px){
     .items {max-height: 60%;height: 90px; width: 90px;}
     .headerInfos{height: 30%; width: 69.5%;}
-    #consolequeries{font-size: 1.2em;bottom: 30px;}
+    #consolequeries{font-size: 1.2em;bottom: 20px;line-height: 25px; padding-right: 50px;}
     .items>a>img{width: 90px;height: 90px;}
     #flex{min-height: 80%; min-width: 90%;}
     #goback>span{width: 30px;}
@@ -67,6 +67,8 @@
     .icon{width: 70%;}
     #flexitude>span{margin: 70px;}
     .feedback-input{font-size: 0.6em;}
+    h1{font-size: 1em;}
+    
     
 }
 
@@ -74,5 +76,4 @@
     .items{height: 80px; width: 80px;}
     .items>a>img{width: 80px;height: 80px;}
     #flex{max-height: 50%;}
-    #consolequeries{bottom: 30px; line-height: 15px;}
 }

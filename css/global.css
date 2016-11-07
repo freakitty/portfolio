@@ -178,9 +178,9 @@ ul>li:hover{
 }
 h1{
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
-    transform: translate(-50%,400%);
+    transform: translate(-50%,200%);
     font-size: 1.5em;
     color: #40ffbf;
     font-family: 'cutive mono';
