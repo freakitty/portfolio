@@ -156,7 +156,7 @@ BURGER
 /****** 
 KEYDOWN 
 *****/
-    var show = ['Hey', 'there', '!', '<br>', "I'm", "Cindy", 'Castano,', '<br>', 'print', "graphic", "and", 'front', 'end', '/', "web", "designer", 'based', 'in', 'Paris', '.', 'Powered', 'by', 'creativity', "I'll", 'be', 'glad', 'to', 'help', 'you,', "let's", 'work', 'together', '.'], i = 0, updateHey = function () {
+    var show = ['Hey', 'there', '!', '<br>', "I'm", '<a href="images/CV-CindyCastano.pdf" target="_blank" style="color:#40ffbf">Cindy</a>', 'Castano,', '<br>', 'a', "graphic", "and", 'front', 'end', '/', "web", "designer", 'based', 'in', 'Paris', '.', 'Passionate', 'about', 'print', "design", 'and', 'digital,', 'I', 'like', 'to', "mix", 'both', 'to', 'create', 'solutions', 'that', 'add', 'value .', '<br>', "Let's", 'get', 'in', 'touch', 'for', 'any', 'project', 'inquiries', '<br>', '>> just', 'drop', 'me a', '<a href="index.html#contact" style="color:#40ffbf"> line</a>','.'], i = 0, updateHey = function () {
         if (i < show.length) {
             document.getElementById('hey').innerHTML += show[i] + ' ';
             i += 1;

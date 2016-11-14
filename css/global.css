@@ -195,52 +195,27 @@ h3{
 }
 #works>h3{color: #fff;}
 
-#goback>span {
-    display: block;
-    height: 6px;
-    margin-bottom: 6px;
-    width: 40px;
-    background-color: #999;
-}
-#goback>span {
-    display: block;
-    height: 2px;
-    margin-bottom: 6px;
-    width: 40px;
-    background-color: #999;
-}
 #goback{
     margin: 30px;
     cursor: pointer;
     display: inline-block;
     height: 15px;
-    -webkit-transition-timing-function: ease-in-out ;
-    -moz-transition-timing-function: ease-in-out;
-    -ms-transition-timing-function: ease-in-out;
-    -o-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out;
-    transition-duration:0.4s;
+    font-size: 1.2em;
+    color: #fff;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    transition-duration:0.3s;
 }
-#goback>span:first-child{
-    -webkit-transform: translateY(8px) rotate(45deg);
-    -moz-transform: translateY(8px) rotate(45deg); 
-    -ms-transform: translateY(8px) rotate(45deg); 
-    -o-transform: translateY(8px) rotate(45deg); 
-    transform:translateY(8px) rotate(45deg);
-}
-#goback>span:last-child{
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg); 
-    -ms-transform:rotate(-45deg); 
-    -o-transform: rotate(-45deg); 
-    transform:rotate(-45deg);
-}
+
 #goback:hover{
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 /***********************************************************/
@@ -289,14 +264,14 @@ h3{
     -webkit-clip-path: inset(0 0 41% 0);
     clip-path: inset(0 0 41%);
 }
-.redShadow {text-shadow:-3px 0 #40ffbf;}
+.redShadow {text-shadow:-3px 0 #B22300;}
 .greenShadow {text-shadow:-3px 0 #40ffbf;}
 .glitch {
     position: absolute; 
     top: 0; left: 0; bottom: 0; right: 0;
 }
 #txt {
-    margin:80px auto;
+    margin:30px auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
     width:700px;
@@ -306,168 +281,40 @@ h3{
     font-size:50px;
     text-transform:uppercase;
     font-family: 'lato';
-    font-weight: 700;
+    font-weight: 300;
     max-width: 80%;
+    color: #fff;
 }
-/******************************* SLIDER ********************************/  
 
-.wrapSlider{
-    position: absolute;
-    top: 50%;
+.header{
+    background-color: #282a29;
+    height: 300px;  
+}
+
+.description{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 0.8em;
+    width: 500px;
+    position: relative;
     left: 50%;
-    transform: translate(-50%, -40%);
-    width: 802px;
-    height: 450px;
-    border: 1px solid #000;
-    box-shadow: 5px 5px 10px rgba(200,200,200,0.5);
+    transform: translateX(-50%);
+    font-weight: 100;
+    line-height: 1.3em;
+    column-count: 2;
+    column-gap: 3em;
+    text-align: justify;
 }
-
-/*** HEADER ***/
-
-.slider-header{
-    border-bottom: 1px solid #000;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    background: #fff;
-    cursor: pointer;
-    z-index: 50;
-    box-sizing: border-box;
-}
-.slider-header span{
-    text-decoration: none; 
-    font-size: 2em; 
-    font-weight: 300; 
-    -webkit-transition: color 0.3s ease;
-    -moz-transition: color 0.3s ease;
-    -ms-transition: color 0.3s ease;
-    -o-transition: color 0.3s ease;
-    transition: color 0.3s ease;
-    color: #A69CA2;
-}
-.slider-header span:hover{
-    color: #282a29;
-}
-#infos{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 88%;
-    height: 100%;
+h2{
+    font-family: roboto;
+    text-transform: uppercase;
     text-align: center;
-    line-height: 40px;  
+    text-decoration: overline;
+    font-size: 1.2em;
+    color: #40ffbf;
+    margin-top: 50px;
+    
 }
-#worksNav{
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100px;
-    height: 40px;
-    display: block;
-}
-#prev{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 50%;
-    border-left: 1px solid #000;
-    height: 100%;
-    text-align: center;
-    line-height: 40px;  
-}
-#next{
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 50%;
-    border-left: 1px solid #000;
-    height: 100%;
-    text-align: center;
-    line-height: 40px;
-}
-.headerInfos{
-    position: absolute;
-    display: none;
-    width: 87.7%;
-    height: 20%;
-    background: #fff;
-    z-index: 60;
-    border-right: 1px solid #000;
-    border-bottom: 1px solid #000;
-    box-sizing: border-box;
-}
-.headerInfos>p, #queriesslider>p{
-    font-family: 'cutive mono';
-    font-size: 0.9em;
-    text-align: center; 
-    max-width: 400px;
-    margin: auto; 
-    padding-top: 10px;
-}
-
-/*** CONTENT ***/
-#slider-content{
-	width:100%;
-	height:410px;
-    position: relative;
-    overflow: hidden;
-}
-#slider-content ul#slider{
-    position:absolute;
-	width:100%;
-	height:410px;	
-}
-#slider-content ul#slider li{
-	float:left;
-	position:relative;
-	width:802px;
-	height:410px;	
-}
-#slider-content>ul>li>img{
-    height: 410px;
-    width: 100%;
-}
-/**bar**/
-#pagination-wrap{
-	min-width:20px;
-	margin-top:380px;
-	margin-left:auto;
-	height:15px;
-	position:relative;
-	text-align:center;
-}
-#pagination-wrap ul {
-	width:100%;
-}
-#pagination-wrap ul li{
-	margin: 0 10px;
-	display: inline-block;
-	width:5px;
-	height:5px;
-	border-radius:50%;
-	background:#000;
-	opacity:0.5;
-	position:relative;
-    top:0; 
-}
-#pagination-wrap ul li.active{
-    width:12px;
-    height:12px;
-    top:3px;
-    opacity:1;
-	box-shadow:rgba(0,0,0,0.1) 1px 1px 0px;	
-}
-/**ANIMATION**/
-#slider-content ul#slider, #pagination-wrap ul li{
-    -webkit-transition: all 0.3s cubic-bezier(1,.01,.32,1);
-	-moz-transition: all 0.3s cubic-bezier(1,.01,.32,1);
-	-o-transition: all 0.3s cubic-bezier(1,.01,.32,1);
-	-ms-transition: all 0.3s cubic-bezier(1,.01,.32,1);
-	transition: all 0.3s cubic-bezier(1,.01,.32,1);	
-}
-
 #flexwork{
     display: flex;
     flex-flow: row wrap;
@@ -491,9 +338,9 @@ h3{
     left: 10%;
     padding-right: 100px;
     max-width: 700px;
-    line-height: 60px;
+    line-height: 40px;
     font-family: 'cutive mono';
-    font-size: 2em;
+    font-size: 1.6em;
 }
 .cursor {
     background: #40ffbf;
