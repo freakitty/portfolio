@@ -6,6 +6,7 @@ $(function () {
 /********* 
 SLIDE PAGE 
 *********/
+    
     // sub : H router
     function getH () {return window.location.hash}
     function setH (h) {window.location.hash = h}
@@ -65,6 +66,7 @@ SLIDE PAGE
             $('.navbar>ul>li').css('border-bottom', '1px solid #282a29');
         }
     });
+    
     $("#about-button,#burger-about").on('click', function () {
         if ($('#about').offset().left < 0) {
             TweenMax.to('#about', 0.7, {left: 0});
