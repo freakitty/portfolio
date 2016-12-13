@@ -245,13 +245,13 @@ h3{
 }
 #console{
     position: absolute;
-    bottom: 100px;
+    bottom: 80px;
     left: 10%;
     padding-right: 100px;
     max-width: 700px;
     line-height: 40px;
     font-family: 'cutive mono';
-    font-size: 1.6em;
+    font-size: 1.5em;
 }
 .cursor {
     background: #40ffbf;
@@ -279,13 +279,14 @@ h3{
 
 #consolequeries{
     position: absolute;
-    bottom: 100px;
+    bottom: 80px;
     left: 10%;
     padding-right: 100px;
-    max-width: 700px;
-    line-height: 80px;
+    max-width: 500px;
+    line-height: 30px;
     font-family: 'cutive mono';
-    font-size: 2em;  
+    font-size: 1.2em;  
+    max-height: 400px;
 }
 
 /*******************************************************************/
