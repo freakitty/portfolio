@@ -158,7 +158,7 @@ BURGER
 /****** 
 KEYDOWN 
 *****/
-    var show = ['Hello', 'there', '!', '<br>', "I am", '<a href="images/CV-CindyCastano.pdf" target="_blank" style="color:#40ffbf">Cindy</a>', 'Castano,', '<br>', 'a', "young", "graphic", '&', "web", "designer", 'based', 'in', 'Paris.', "I'm", 'passionate', 'about', 'print,', "design,", 'and', 'digital.', 'I', 'like', 'to', "mix", 'both', 'to', 'create', 'solutions', 'that', 'add', 'value.', '<br>', "Let's", 'get', 'in', 'touch', 'for', 'any', 'project', 'inquiries', '<br>', '>> just', 'drop', 'me a', '<a href="index.html#contact" style="color:#40ffbf"> line</a>','.'], i = 0, updateHey = function () {
+    var show = ['Hello', 'there', '!', '<br>', "I am", '<a href="images/CV-CindyCastano.pdf" target="_blank" style="color:#40ffbf">Cindy</a>', 'Castano,', '<br>', 'a', "graphic", '&', "web", "designer", 'based', 'in', 'Paris.', "I'm", 'passionate', 'about', 'print,', "design,", 'and', 'digital.', 'I', 'like', 'to', "mix", 'both', 'to', 'create', 'solutions', 'that', 'add', 'value.', '<br>', "Let's", 'get', 'in', 'touch', 'for', 'any', 'project', 'inquiries', '<br>', '>> just', 'drop', 'me a', '<a href="index.html#contact" style="color:#40ffbf"> line</a>','.'], i = 0, updateHey = function () {
         if (i < show.length) {
             document.getElementById('hey').innerHTML += show[i] + ' ';
             i += 1;
