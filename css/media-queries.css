@@ -13,13 +13,6 @@
     #txt{font-size: 40px;}
 }
 
-@media screen and (max-width:1080px){
-    .items {height: 150px; width: 150px; margin: 10px;}
-    .items>a>img{width: 150px;height: 150px;}
-}
-
-@media screen and (max-width:960px){.items {margin: 5px; max-height: 70%;}}
-
 @media screen and (max-width:800px){    
     .placeholder{display: none;}
     #console{display: none;}
@@ -29,38 +22,28 @@
     #menu{display: none;}
     #burger{display: block;}
     h1{display: block;}
-    h3{display: block;}
-    .items {height: 140px; width: 140px; margin: 10px; max-height: 70%;}   
-    .items>a>img{width: 140px;height: 140px;}
+    h3{display: block;} 
     .bottom{font-size: 30px;}
     #txt{font-size: 30px;}   
 }
 
-@media screen and (max-width:600px){
-    .items {height: 130px; width: 130px; margin: 5px;}
-    .items>a>img{width: 130px;height: 130px; margin: 5px}
-    .contact{width: 70%;}
+@media screen and (max-width:600px){ 
     #goback{margin: 20px;}
 }
 
-@media screen and (max-width:480px){
-    .items {max-height: 60%;height: 90px; width: 90px;}
+@media screen and (min-width:480px){
+    #flex{max-height: 70%; max-width: 70%; overflow-x: scroll;}
+}
+
+@media screen and (max-width:480px){  
     #consolequeries{font-size: 1.2em;bottom: 20px;line-height: 25px; padding-right: 50px;}
-    .items>a>img{width: 90px;height: 90px;}
-    #flex{min-height: 80%; min-width: 90%;}
-    #close{margin-left: 117%;}
+    #flex{max-height: 70%; max-width: 70%; overflow-y: scroll; flex-direction: column;}
     #flexitude>span{width: 50%;}
     .icon{width: 70%;}
     #flexitude>span{margin: 70px;}
-    .feedback-input{font-size: 0.6em;}
     h1{font-size: 1em;}  
 }
 
-@media screen and (max-width:320px){
-    .items{height: 80px; width: 80px;}
-    .items>a>img{width: 80px;height: 80px;}
-    #flex{max-height: 50%;}
-}
 @media screen and (max-height:490px){
     #consolequeries{font-size: 0.8em; line-height: 20px;}
 }

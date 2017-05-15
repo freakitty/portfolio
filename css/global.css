@@ -208,20 +208,18 @@ h3{
     top: -100%;
 }
 #works.open{top: 0;}
+
 #flex{
+    
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;   
-    max-height: 100%;
-    min-width: 80%;
+    flex-flow: row;
+    
 }
 .items {
-    height: 180px;
-    width: 180px;
     margin: 20px; 
 }
 .items:hover{
@@ -232,6 +230,7 @@ h3{
     4.3% {opacity: 1; transform: scaleY(1.5);}
     43% {opacity: 1; transform: scaleX(10); transform: scaleY(.1); rotate(60deg);}
 }
+
 
 /**************************************************************/
 /***************************** ABOUT *************************/
@@ -328,57 +327,4 @@ h3{
 #flexitude>span:hover{opacity: 1;}
 #mail{
     cursor: pointer;
-}
-#form{
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    display: none;
-    color: white;
-    opacity: 0;
-}
-#close{
-    margin-left: 113%;
-    cursor: pointer;
-}
-input:focus{outline: none;}
-textarea:focus{outline: none;}
-.feedback-input{
-    color: white;
-    font-size: 0.9em;
-    font-family: 'cutive mono';
-    border-radius: 5px;
-    background-color: transparent;
-    border: 2px solid #33B588;
-    transition: all 0.3s;
-    padding: 5px;
-    margin-bottom: 5px;
-    width: 100%;
-}
-.feedback-input:focus { border:2px solid #40ffbf; }
-textarea {
-    height: 200px;
-    width: 100%;
-}
-[type="submit"]{
-    color: white;
-    font-family: 'cutive mono';
-    width: 50%;
-    background-color: #33B588;
-    border-radius: 5px;
-    border: 0;
-    cursor: pointer; 
-    transition: all 0.3s;
-}
-[type="submit"]:hover{background-color:#40ffbf;}
-form{
-    padding: 50px;
-    width: 300px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0,0,0,0.8);
-    border-radius: 10px;
-    max-width: 50%;
 }
