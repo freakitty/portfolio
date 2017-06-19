@@ -22,9 +22,11 @@
 
 <body>
 
-<!-- ******** HOME ********* -->
+<!-- =============================================== HOME ================================================ -->
+
+   <!-- =============================== BURGER ==================================== -->
    
-    <div id="burger"><!-- BURGER -->
+    <div id="burger">
         <div class="navbar">
             <ul>
                 <li><a id="burger-home" href="index.html">HOME</a></li>
@@ -39,66 +41,72 @@
         <span></span>
         <span></span>
     </div>
-   </div> <!-- FIN BURGER -->
+   </div> 
+   
+   <!-- ================================= MAIN NAV ================================= -->
    
     <nav> 
         <ul id="menu">
-            <li class="button" id="works-button">WORKS</li>
-            <li class="button" id="about-button">ABOUT</li>
-            <li class="button" id="contact-button">CONTACT</li>
-            <li class="button" id="name-button">Cindy Castano - Graphic/web Designer</li>
+            <li class="button" id="works-button"><span>WORKS</span></li>
+            <li class="button" id="about-button"><span>ABOUT</span></li>
+            <li class="button" id="contact-button"><span>CONTACT</span></li>
+            <li class="button" id="name-button"><span>Cindy Castano - Graphic/web Designer</span></li>
         </ul>
         
     <img src="images/logo.png" alt="personnal logo" id="logo">
+    
     <h1>Cindy Castano - <br> Graphic/web Designer</h1>
             
-    </nav><!-- ************* FIN HOME ************* -->
+    </nav>
         
-    <div id="works"><!-- ******** WORKS ********* -->
-        <h3>WORKS</h3>
+<!-- =============================================== WORKS ================================================ -->
+   
+    <div id="works">
+        <h3>WORKS</h3>    
+        
+        <img class="scrollIcon" id="scrollX" src="images/icons/scrollX.png" alt="scroll icon">
+        <img src="images/icons/scrollY.png" alt="scroll icon" class="scrollIcon" id="scrollY">
+        
         <div id="flex">
            
-            <div class="items">
-                <a href="capitales.html"><img src="images/capitales/cover.JPG" alt="projet capitales insolites"></a>
-            </div>
+            <div class="items"><a href="capitales.html"><img src="images/capitales/cover.JPG" alt="projet capitales insolites"><div class="description"><h2>Secret side of capital city</h2><h4>Print</h4></div></a></div>
             
-            <div class="items">
-                <a href="lausanne-typography.html"><img src="images/Lausanne/couv.jpg" alt="modular typography"></a>
-            </div>
+            <div class="items"><a href="lausanne-typography.html"><img src="images/Lausanne/couv.jpg" alt="modular typography"><div class="description"><h2>lausanne typography</h2><h4>Print</h4></div></a></div>
             
-            <div class="items">
-                <a href="school-book.html"><img src="images/schoolbooks/cover-schoolbook.jpg" alt="scholar book"></a>
-            </div>
+            <div class="items"><a href="school-book.html"><img src="images/schoolbooks/cover-schoolbook.jpg" alt="scholar book"><div class="description"><h2>school books</h2><h4>Print</h4></div></a></div>
             
-            <div class="items">
-                <a href="sed.html"><img src="images/sed/coversed.jpg" alt="sed"></a>
-            </div>
+            <div class="items"><a href="sed.html"><img src="images/sed/coversed.jpg" alt="sed"><div class="description"><h2>sed</h2><h4>Print</h4></div></a></div>
             
-            <div class="items">
-                <a href="elixir.html"><img src="images/elixir/coverelixir.jpg" alt="elixir by dior"></a>
-            </div>
+            <div class="items"><a href="elixir.html"><img src="images/elixir/coverelixir.jpg" alt="elixir by dior"><div class="description"><h2>elixir by dior</h2><h4>Web</h4></div></a></div>
             
-            <div class="items">
-                <a href="melisso.html"><img src="images/Melissopoulos/covermelisso.jpg" alt="melissopoulos"></a>
-            </div>
+            <div class="items"><a href="melisso.html"><img src="images/Melissopoulos/covermelisso.jpg" alt="melissopoulos"><div class="description"><h2>melissopoulos grec product</h2><h4>Print</h4></div></a></div>
             
-            <div class="items">
-                <a href="photo.html"><img src="images/f10/coverf10.jpg" alt="f/10 exposition photo"></a>
-            </div>
+            <div class="items"><a href="photo.html"><img src="images/f10/coverf10.jpg" alt="f/10 exhibition"><div class="description"><h2>f/10 exhibition</h2><h4>Web</h4></div></a></div>
             
-            <div class="items">
-                <a href="https://freakitty.github.io/milkyway" target="_blank"><img src="images/f10/coverf10.jpg" alt="f/10 exposition photo"></a>
-            </div>
+            <div class="items"><a href="milkyway.html"><img src="images/f10/coverf10.jpg" alt="milkyway"><div class="description"><h2>milkyway</h2><h4>Web</h4></div></a></div>
+            
+            <div class="items"><a href="9901.html"><img src="images/f10/coverf10.jpg" alt="9901 website"><div class="description"><h2>9901</h2><h4>Web</h4></div></a></div>
+            
         </div>
-    </div><!-- ******** FIN WORKS ********* -->
         
-    <div id="about"><!-- ******** ABOUT ********* -->
+    </div>
+        
+<!-- =============================================== ABOUT ================================================ -->
+        
+    <div id="about">
+       
         <h3>ABOUT</h3>
+        
+       <!-- ================================= CONSOLE ================================= -->
+        
         <div id="console">
             <span class="placeholder">Start typing</span>
             <span id="hey"></span>
             <span class="cursor">&nbsp;</span>
         </div>
+        
+       <!-- ================================= CONSOLE QUERIES ================================= -->
+        
         <div id="consolequeries">
         <p id="aboutqueries"> 
            Hello there ! <br>
@@ -109,24 +117,26 @@
         </p>
         <span class="cursor">&nbsp;</span>
         </div>
-    </div> <!-- ******** FIN ABOUT ********* -->
         
-    <div id="contact"><!-- ******** CONTACT ********* -->
+    </div>
+        
+<!-- =============================================== CONTACT ================================================ -->
+        
+    <div id="contact">
         <h3>CONTACT</h3>
         <div id="flexitude">
-           <span>
-               <a href="https://fr.linkedin.com/in/cindy-castano-18830684" target="_blank"><img src="images/icons/linkedin.png" alt="linkedin logo" class="icon"></a>
-           </span>
-           <span>
-            <a href="mailto:castano.cindy1@gmail.com"><img src="images/icons/mail.png" alt="icon mail" id="mail" class="icon"></a> 
-           </span>
-            <span>
-              <a href="https://github.com/freakitty" target="_blank"><img src="images/icons/github.png" alt="icon CV" class="icon"></a>  
-            </span>
+          
+           <span><a href="https://fr.linkedin.com/in/cindy-castano-18830684" target="_blank"><img src="images/icons/linkedin.png" alt="linkedin logo" class="icon"></a></span>
+           
+           <span><a href="mailto:castano.cindy1@gmail.com"><img src="images/icons/mail.png" alt="icon mail" id="mail" class="icon"></a></span>
+           
+            <span><a href="https://github.com/freakitty" target="_blank"><img src="images/icons/github.png" alt="icon CV" class="icon"></a></span>
+            
         </div>
-    </div><!-- ******** FIN CONTACT ********* -->
+    </div>
         
-<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>--><script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
 <script src="js/TweenMax.min.js"></script>
 <script src="js/moteur.js"></script> 
 </body>

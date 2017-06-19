@@ -1,10 +1,9 @@
 body{font-family: 'Roboto Mono'; overflow: hidden;}
 
-/************************************************/
-/********************** HOME ********************/
-/***********************************************/
+/* =========================================== HOME ===================================== */
 
-/****** BURGER ****/
+/* =============================== BURGER ================================= */
+
 #hamburger-button{
     position: absolute;
     z-index: 9999;
@@ -16,6 +15,7 @@ body{font-family: 'Roboto Mono'; overflow: hidden;}
     margin-top:5%;
     cursor: pointer;
 }
+
 #hamburger-button>span {
     display: block;
     height: 6px;
@@ -28,7 +28,8 @@ body{font-family: 'Roboto Mono'; overflow: hidden;}
     -o-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
     transition-duration:0.4s;
-}   
+}
+
 #hamburger-button.open>span:first-child{
     -webkit-transform: translateY(12px) rotate(45deg);
     -moz-transform: translateY(12px) rotate(45deg); 
@@ -36,6 +37,7 @@ body{font-family: 'Roboto Mono'; overflow: hidden;}
     -o-transform: translateY(12px) rotate(45deg); 
     transform:translateY(12px) rotate(45deg);
 }
+
 #hamburger-button.open>span:nth-child(2){
     -webkit-transform: rotateY(90deg); 
     -moz-transform: rotateY(90deg); 
@@ -43,6 +45,7 @@ body{font-family: 'Roboto Mono'; overflow: hidden;}
     -o-transform: rotateY(90deg); 
     transform: rotateY(90deg);
 }
+
 #hamburger-button.open>span:last-child{
     -webkit-transform: translateY(-12px) rotate(-45deg); 
     -moz-transform: translateY(-12px) rotate(-45deg); 
@@ -50,6 +53,7 @@ body{font-family: 'Roboto Mono'; overflow: hidden;}
     -o-transform: translateY(-12px) rotate(-45deg); 
     transform: translateY(-12px) rotate(-45deg);
 }
+
 .navbar{
     position:absolute;
     opacity:.9;
@@ -66,14 +70,17 @@ body{font-family: 'Roboto Mono'; overflow: hidden;}
     background-color:#fff;
     color:#40ffbf;
 }
+
 .navbar.open{
     left:0;
 }
+
 .navbar ul{
     list-style:none;
     margin-top:60%;
     font-size:1.5em;
 }
+
 .navbar ul li{
     border-bottom:1px solid #282a29;
     margin-bottom:10px;
@@ -81,18 +88,24 @@ body{font-family: 'Roboto Mono'; overflow: hidden;}
     text-align:left;
     z-index: 999;
 }
+
 nav{
     position: relative;
     height: 100%;
 }
+
 #menu{
     color: #40ffbf;
     position: fixed;
     z-index: 50;
 }
+
 div{
     display: block;
 }
+
+/* =============================== MAIN NAV ================================= */
+
 ul>li>a{
     text-decoration: none;
     color: #40ffbf;  
@@ -103,6 +116,7 @@ ul>li>a{
     cursor: pointer;
     vertical-align: middle;
     text-align: center;
+    transition: all .3s ease;
 }
 
 #works-button{
@@ -117,12 +131,14 @@ ul>li>a{
     transform: rotate(270deg);
     font-size: 2.2em;
 }
+
 #contact-button{
     right: 0%;
     top: 50%;
     transform: rotate(90deg);
     font-size: 2.2em;
 }
+
 #name-button{
     bottom: 20px;
     left: 50%;
@@ -131,6 +147,7 @@ ul>li>a{
     font-weight: 300;
     color: #282a29;
 }
+
 #logo{
     position: fixed;
     left: 50%;
@@ -138,7 +155,6 @@ ul>li>a{
     transform: translate(-50%, -50%);
     max-width: 30%;
     opacity: 0;    
-/***************** opacity *******************/
     -webkit-animation-name:opacityLogo;
     -webkit-animation-duration: 2s;
     -webkit-animation-timing-function: ease;
@@ -165,6 +181,7 @@ ul>li>a{
     animation-delay:1s;
     animation-fill-mode: forwards;
 }
+
 @-webkit-keyframes opacityLogo{from{opacity: 0;}to{opacity: 1;}}
 @-moz-keyframes opacityLogo{from{opacity: 0;}to{opacity: 1;}}
 @-o-keyframes opacityLogo{from{opacity: 0;}to{opacity: 1;}}
@@ -177,6 +194,7 @@ ul>li>a{
         opacity: 1;
     }
 }
+
 h1{
     position: absolute;
     top: 30%;
@@ -186,6 +204,46 @@ h1{
     color: #40ffbf;
     font-family: 'cutive mono';
 }
+
+#menu span{
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+#menu span:before, #menu span:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 4px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #fff;
+}
+
+#menu span:before {
+    left: -2.5px;
+}
+#menu span:after {
+    right: 2.5px;
+    background: #fff;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#menu span:hover:before {
+    background: #fff;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#menu span:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+}
+
+/* =============================== TITLE =================== */
+
 h3{
     position: absolute;
     top: 20px;
@@ -194,11 +252,10 @@ h3{
     font-size: 2em;
     color: #40ffbf;
 }
+
 #works>h3{color: #fff;}
 
-/***********************************************************/
-/************************** WORKS **************************/
-/*********************************************************/
+/* =========================================== WORKS ===================================== */
 
 #works{
     width: 100%;
@@ -207,34 +264,94 @@ h3{
     background-color: #40ffbf;
     top: -100%;
 }
+
 #works.open{top: 0;}
 
+.scrollIcon{
+    position: absolute;
+    top: 75%;
+    left: 48%;
+    animation: pulse 2s infinite ease running;
+}
+
+@keyframes pulse{
+    0% 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+}
+#scrollX{
+    display: block;
+}
+#scrollY{
+    display: none;
+}
+
 #flex{
-    
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
-    flex-flow: row;
-    
+    flex-flow: row;   
+    overflow: hidden;
 }
+
 .items {
     margin: 20px; 
+    transition: transform .3s ease;
+    transform: scale(1);
 }
+
 .items:hover{
-    animation: noise-3 1s linear infinite;
-}
-@keyframes noise-3{
-    0%,3%,5%,42%,44%,100% {opacity: 1; transform: scaleY(1);}
-    4.3% {opacity: 1; transform: scaleY(1.5);}
-    43% {opacity: 1; transform: scaleX(10); transform: scaleY(.1); rotate(60deg);}
+    transform: scale(1.2);
 }
 
+.items a{
+    text-decoration: none;
+}
 
-/**************************************************************/
-/***************************** ABOUT *************************/
-/*************************************************************/
+.items .description{
+    position: absolute;
+    top: 0;
+    background: rgba(0,0,0,0.8);
+    width: 100%;   
+    height: 100%;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+h2, h4{
+    text-align: center;
+    color: #40ffbf;
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2em;
+    transform: translateY(-25px);
+    transition: .3s ease;
+    padding-top: 55px;
+    margin-bottom: 10px;   
+}
+
+h4{
+    transform: translateY(25px);
+    transition: .3s ease;  
+}
+
+.description:hover{opacity: 1;}
+
+.items:hover .description h2, .items:hover .description h4{transform: translateY(0);}
+
+/* =========================================== ABOUT ===================================== */
+
 #about{
     width: 100%;
     height: 100%;
@@ -242,6 +359,9 @@ h3{
     background-color: #fff;
     left: -100%; 
 }
+
+/* =============================== CONSOLE =================== */
+
 #console{
     position: absolute;
     bottom: 80px;
@@ -252,6 +372,7 @@ h3{
     font-family: 'cutive mono';
     font-size: 1.5em;
 }
+
 .cursor {
     background: #40ffbf;
     animation: blink 1s linear infinite;
@@ -265,16 +386,20 @@ h3{
     -o-box-shadow: 0 0 5px rgba(0,100,0,40);
     box-shadow: 0 0 5px rgba(0,100,0,40);
 }
+
 @keyframes blink {
     0% { opacity: 1; }
     25% { opacity: 0; }
     50% { opacity: 0; }
     100% { opacity: 1; }
 }
+
 @-webkit-keyframes blink {0% { opacity: 1; }25% { opacity: 0; }50% { opacity: 0; }100% { opacity: 1; }}
 @-ms-keyframes blink {0% { opacity: 1; }25% { opacity: 0; }50% { opacity: 0; }100% { opacity: 1; }}
 @-moz-keyframes blink {0% { opacity: 1; }25% { opacity: 0; }50% { opacity: 0; }100% { opacity: 1; }}
 @-o-keyframes blink {0% { opacity: 1; }25% { opacity: 0; }50% { opacity: 0; }100% { opacity: 1; }}
+
+/* =============================== CONSOLE QUERIES =================== */
 
 #consolequeries{
     position: absolute;
@@ -288,9 +413,8 @@ h3{
     max-height: 400px;
 }
 
-/*******************************************************************/
-/***************************** CONTACT *****************************/
-/******************************************************************/
+/* =========================================== CONTACT ===================================== */
+
 #contact{
     width: 100%;
     height: 100%;
@@ -298,6 +422,7 @@ h3{
     background-color: #282a29;
     left: 100%;
 }
+
 #flexitude{
     position: absolute;
     top: 50%;
@@ -308,6 +433,7 @@ h3{
     justify-content: space-around;
     min-width: 80%;
 }
+
 #flexitude>span{
     position: relative;
     margin: 100px;
@@ -318,13 +444,16 @@ h3{
     transition: opacity 0.3s ease;
     opacity: 0.5;
 }
+
 .icon{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 #flexitude>span:hover{opacity: 1;}
+
 #mail{
     cursor: pointer;
 }

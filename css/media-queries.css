@@ -29,6 +29,7 @@
 
 @media screen and (max-width:600px){ 
     #goback{margin: 20px;}
+    
 }
 
 @media screen and (min-width:480px){
@@ -42,6 +43,9 @@
     .icon{width: 70%;}
     #flexitude>span{margin: 70px;}
     h1{font-size: 1em;}  
+    .scrollIcon{top: 90%;}
+    #scrollY{display: block;}
+    #scrollX{display: none;}
 }
 
 @media screen and (max-height:490px){
