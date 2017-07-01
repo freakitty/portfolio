@@ -14,64 +14,56 @@
     <meta name="author" content="Castano Cindy">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/work.css" type="text/css">
-    <link rel="stylesheet" href="css/media-queries.css" type="text/css">
+    <link rel="stylesheet" href="css/work-queries.css" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700,100,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
 </head>
 <body>
-             <div id="goback"> 
-             <span></span>
-             <span></span>
-              </div>
-             
             
-             
-    <div id="txt"> <!-- GLITCH --> 
-        <div class="glitch top">SECRET SIDE OF CAPITAL CITY</div>
-        <div class="glitch bottom">SECRET SIDE OF CAPITAL CITY</div>
-    </div> <!-- FIN GLITCH -->
-        
-    <div class="wrapSlider"> <!-- SLIDER --> 
-           
-        <div class="slider-header"><!-- SLIDER HEADER -->
-            <div id="infos"><span id="plus">+</span></div>
-                <div id="worksNav">
-                    <span id="prev">&lt;</span>
-                    <span id="next">></span>
-                </div>
-        </div> 
-        <div class="headerInfos">
-            <p>Secret side of capital city, is a project to highlight the secret of european cities. <br>
-            4 hide places per brochures. Client : Fram. </p>  
-        </div>
-            
-        <div id="slider-content"> <!-- SLIDER CONTENT -->
-            <ul id="slider">
-                <li><img src="images/capitales/image1.jpg" alt="cover of brochures"></li>    
-                <li><img src="images/capitales/image2.jpg" alt="inside of brochures"></li>
-                <li><img src="images/capitales/image3.jpg" alt="close up of brochure"></li>
-            </ul>
+    <header>
 
-            <!--controls--> 
-            <div id="pagination-wrap">
-                <ul>
-                </ul>
-            </div>
-            <!--controls-->  
+        <div id="goback"> 
+        <img src="images/icons/back-button.png" alt="back button">
         </div>
-  
-    </div>
-    <div id="queriesslider">
-        <p>Secret side of capital city, is a project to highlight the secret of european cities. <br>
+        <h6>back</h6>
+        
+        <div class="title">
+            <h1>secret side of <br>capital city</h1>
+            <span></span>
+        </div>   
+    
+    </header>
+    
+    <main>
+      
+      <!-- =============================== DESCRIPTION ==================================== -->
+       
+       <div class="intro"> 
+       
+           <h2>Description</h2>
+           
+        <p class="description">Secret side of capital city, is a project to highlight the secret of european cities. <br>
             4 hide places per brochures. Client : Fram. </p>
+            
+        </div>
+        
+        <!-- =============================== PROJECT IMG ==================================== -->
+        
         <div id="flexwork">
             <img src="images/capitales/768-image1.jpg" alt="cover of brochures"> 
             <img src="images/capitales/768-image2.jpg" alt="inside of brochures"> 
             <img src="images/capitales/768-image3.jpg" alt="close up of brochure">
         </div>
-    </div>
-<script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+        
+        <!-- =============================== PROJECT NAV ==================================== -->
+        
+        <div class="next"><a href="lausanne-typography.html"><img src="images/icons/next.png" alt="next button" class="projectNav"></a><h5>Next <br> project</h5></div>
+        
+
+    </main>
+    
+<script   src="js/jquery-3.2.1.min.js"></script>
 <script src="js/TweenMax.min.js"></script>
 <script src="js/moteur.js"></script> 
 </body>

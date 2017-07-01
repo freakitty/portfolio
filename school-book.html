@@ -14,60 +14,40 @@
     <meta name="author" content="Castano Cindy">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/work.css" type="text/css">
-    <link rel="stylesheet" href="css/media-queries.css" type="text/css">
+    <link rel="stylesheet" href="css/work-queries.css" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700,100,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-             <div id="goback"> 
-             <span></span>
-             <span></span>
-              </div>
-             
-            
-             
-    <div id="txt"> <!-- GLITCH --> 
-        <div class="glitch top">SCHOOL BOOKS</div>
-        <div class="glitch bottom">SCHOOL BOOKS</div>
-    </div> <!-- FIN GLITCH -->
+ <header>
+        <div id="goback"> 
+        <img src="images/icons/back-button.png" alt="back button">
+        </div>
+        <h6>back</h6>
         
-    <div class="wrapSlider"> <!-- SLIDER --> 
-           
-        <div class="slider-header"><!-- SLIDER HEADER -->
-             <div id="infos"><span id="plus">+</span></div>
-                <div id="worksNav">
-                    <span id="prev">&lt;</span>
-                    <span id="next">></span>
-                </div>
-        </div> 
-        <div class="headerInfos">
-            <p>I work on pocket school books serie for a small companies of academic support. <br>
-            I was in charge of the book cover and the layout. Client : Mathsmélisso </p>  
-        </div>
-            
-        <div id="slider-content"> <!-- SLIDER CONTENT -->
-            <ul id="slider">
-                <li><img src="images/schoolbooks/vue1.jpg" alt="cover of a book"></li>    
-                <li><img src="images/schoolbooks/vue2.jpg" alt="cover of a book"></li>
-                <li><img src="images/schoolbooks/vue3.jpg" alt="inside of a book"></li>
-                <li><img src="images/schoolbooks/vue4.jpg" alt="series of books"></li>
-            </ul>
+        <div class="title">
+            <h1>school <br> book</h1>
+            <span></span>
+        </div>   
+    
+    </header>
 
-            <!--controls--> 
-            <div id="pagination-wrap">
-                <ul>
-                </ul>
-            </div>
-            <!--controls-->  
+        <main>
+    
+       <!-- =============================== DESCRIPTION ==================================== -->
+       
+        <div class="intro">   
+    
+            <h2>Description</h2>
+       
+            <p class="description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum similique tenetur ratione cum quibusdam ducimus dicta iusto optio? Rerum obcaecati quia nostrum a, explicabo officia animi. Non, quaerat recusandae rem! </p>
+        
         </div>
-  
-    </div>
-    <div id="queriesslider">
-        <p>I work on pocket school books serie for a small companies of academic support. <br>
-            I was in charge of the book cover and the layout. <br>
-            Client : Mathsmélisso </p>
+        
+        <!-- =============================== PROJECT IMG ==================================== -->
+        
         <div id="flexwork">
             <img src="images/schoolbooks/768-vue1.jpg" alt="poster of event's typography"> 
             <img src="images/schoolbooks/768-vue2.jpg" alt="poster of event's typography"> 
@@ -76,9 +56,17 @@
             <img src="images/schoolbooks/768-coverpc.jpg" alt="poster of event's typography">
             <img src="images/schoolbooks/768-covermaths.jpg" alt="poster of event's typography">
         </div>
-    </div>
+        
+        <!-- =============================== PROJECT NAV ==================================== -->
+        
+        <div class="previous"><a href="lausanne-typography.html"><img src="images/icons/previous.png" alt="previous button" class="projectNav"></a><h5>Previous <br> project</h5></div>
+        <div class="next"><a href="sed.html"><img src="images/icons/next.png" alt="next button" class="projectNav"></a><h5>Next <br> project</h5></div>
+        
+</main> 
+        
+   
 
-<script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+<script   src="js/jquery-3.2.1.min.js"></script>
 <script src="js/TweenMax.min.js"></script>
 <script src="js/moteur.js"></script> 
 </body>

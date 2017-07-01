@@ -12,53 +12,57 @@ html, body{height: 100%; font-family: 'Roboto Mono';}
     -ms-transition-timing-function: ease;
     -o-transition-timing-function: ease;
     transition-timing-function: ease;
-    transition-duration:0.3s;
+    transition-duration:.3s;
 }
 
 #goback:hover{
-    -webkit-transform: scale(1.3);
-    -moz-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    -o-transform: scale(1.3);
-    transform: scale(1.3);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
-/***************** GLITCH **************/
-.bottom {
-    font-size:50px;
-    -webkit-clip-path: inset(58% 0 0 0);
-    clip-path: inset(58% 0 0 0);
+#goback img{
+    width: 40px;
 }
-.top {
-    -webkit-clip-path: inset(0 0 41% 0);
-    clip-path: inset(0 0 41%);
+
+h6{
+    color: #40ffbf;
+    font-weight: 400;
+    font-size: 0.8em;
+    margin-left: 35px;
 }
-.redShadow {text-shadow:-3px 0 #B22300;}
-.greenShadow {text-shadow:-3px 0 #40ffbf;}
-.glitch {
-    position: absolute; 
-    top: 0; left: 0; bottom: 0; right: 0;
-}
-#txt {
-    margin:30px auto;
+
+.title{
+    width: auto;
     position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-    width:700px;
-    height:100px;
-    text-align: center;
-    z-index:2;
-    font-size:50px;
-    text-transform:uppercase;
-    font-family: 'lato';
-    font-weight: 300;
-    max-width: 80%;
-    color: #313332;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title h1{
+    display: inline;
+    text-transform: uppercase;
+    color: #40ffbf;
+    font-size: 6em;
+    font-weight: 900;
+    font-family: lato;
+}
+
+.title span{
+    position: relative;
+    top: -30px;
+    left: 25px;
+    display: block;
+    height: 30px;
+    width: auto;
+    background-color: rgba(178,35,0,0.8);
 }
 
 header{
-    background-color: #070807;
-    height: 300px; 
-    box-shadow: 10px 10px 10px #000;
+    height: 400px; 
 }
 
 .description{
@@ -75,23 +79,60 @@ header{
     column-gap: 3em;
     text-align: justify;
 }
+
 h2{
+    padding-top: 50px;
     font-family: roboto;
     text-transform: uppercase;
     text-align: center;
     text-decoration: overline;
     font-size: 1.2em;
-    color: #313332;
-    margin-top: 50px;   
+    color: #313332;  
 }
 
 main{
-    height: 100%;
-    background-color: #282a29;
+    background-color: #fff;
 }
+
 #flexwork{
+    position: relative;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    max-width: 40%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;   
 }
+
 #flexwork>img{margin: 20px auto;}
+
+.projectNav{
+    width: 30%;
+    transition: .3s ease;
+}
+
+.projectNav:hover{
+    transform: scale(1.2);
+}
+
+.previous{
+    position: fixed;
+    top: 30%;
+    left: 30px;
+    text-align: center;
+    width: 80px;
+}
+
+.next{
+    position: fixed;
+    top: 30%;
+    right: 30px;
+    text-align: center;
+    width: 80px;
+}
+
+h5{
+    padding-top: 8px;
+    font-size: 0.6em;
+}

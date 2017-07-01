@@ -14,62 +14,41 @@
     <meta name="author" content="Castano Cindy">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/work.css" type="text/css">
-    <link rel="stylesheet" href="css/media-queries.css" type="text/css">
+    <link rel="stylesheet" href="css/work-queries.css" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700,100,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-             <div id="goback"> 
-             <span></span>
-             <span></span>
-              </div>
-             
-            
-             
-    <div id="txt"> <!-- GLITCH --> 
-        <div class="glitch top">Elixir by dior </div>
-        <div class="glitch bottom">Elixir by dior </div>
-    </div> <!-- FIN GLITCH -->
-        
-    <div class="wrapSlider"> <!-- SLIDER --> 
-           
-        <div class="slider-header"><!-- SLIDER HEADER -->
-            <div id="infos"><span id="plus">+</span></div>
-                <div id="worksNav">
-                    <span id="prev">&lt;</span>
-                    <span id="next">></span>
-                </div>
-        </div> 
-        <div class="headerInfos">
-            <p>Elixir is a new product of cosmetofood by Dior, here is a serie of aloe drink. <br>
-             I work on the packaging, logotype, and made the website. <br>
-              Client : Dior
-             </p>  
-        </div>
-            
-        <div id="slider-content"> <!-- SLIDER CONTENT -->
-            <ul id="slider">
-                <li><img src="images/elixir/logo.jpg" alt="Logo of Elixir by dior"> </li>    
-                <li><img src="images/elixir/vue1.jpg" alt="packaging of the brand"></li>
-                <li><img src="images/elixir/vue2.jpg" alt="home of the website"></li>
-                <li><img src="images/elixir/vue3.jpg" alt="presentation of the whole website"></li>
-            </ul>
+   <header>
 
-            <!--controls--> 
-            <div id="pagination-wrap">
-                <ul>
-                </ul>
-            </div>
-            <!--controls-->  
+        <div id="goback"> 
+        <img src="images/icons/back-button.png" alt="back button">
         </div>
-  
-    </div>
-    <div id="queriesslider">
-        <p>Elixir is a new product of cosmetofood by Dior, here is a serie of aloe drink. <br>
-             I work on the packaging, logotype, and made the website. <br>
-              Client : Dior </p>
+        <h6>back</h6>
+        
+        <div class="title">
+            <h1>elixir <br>by dior</h1>
+            <span></span>
+        </div>   
+    
+    </header>
+    
+    <main>
+       
+       <!-- =============================== DESCRIPTION ==================================== -->
+        
+        <div class="intro">
+           
+            <h2>Description</h2>
+            
+            <p class="description">Elixir is a new product of cosmetofood by Dior, here is a serie of aloe drink. <br> I work on the packaging, logotype, and made the website. <br> Client : Dior </p>
+             
+        </div>
+        
+        <!-- =============================== PROJECT IMG ==================================== -->
+        
         <div id="flexwork">
             <img src="images/elixir/768-logo.jpg" alt="Logo of Elixir"> 
             <img src="images/elixir/768-vue1.jpg" alt="packaging of a bottle"> 
@@ -77,9 +56,16 @@
             <img src="images/elixir/768-vue5.jpg" alt="home of the website">
             <img src="images/elixir/768-vue4.jpg" alt="presentation of the whole website">   
         </div>
-    </div>
+        
+        <!-- =============================== PROJECT NAV ==================================== -->
+        
+        <div class="previous"><a href="sed.html"><img src="images/icons/previous.png" alt="previous button" class="projectNav"></a><h5>Previous <br> project</h5></div>
+        <div class="next"><a href="melisso.html"><img src="images/icons/next.png" alt="next button" class="projectNav"></a><h5>Next <br> project</h5></div>
+        
+        
+    </main>
 
-<script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+<script   src="js/jquery-3.2.1.min.js"></script>
 <script src="js/TweenMax.min.js"></script>
 <script src="js/moteur.js"></script> 
 </body>

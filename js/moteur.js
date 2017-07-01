@@ -3,9 +3,7 @@
 /* jslint expr: true */
 $(function () {
     "use strict";
-/********* 
-SLIDE PAGE 
-*********/
+/* ============================== SLIDE PAGE ========================== */
     
     // sub : H router
     function getH () {return window.location.hash}
@@ -113,9 +111,7 @@ SLIDE PAGE
         $('.navbar>ul>li').css('border-bottom', '1px solid #282a29');
     });
     
- /*************
- GO BACK BUTTON 
- *************/
+ /* =========================================== GO BACK BUTTON ========================= */
     $('#goback').on('click', function () {
         window.open('index.html#works', '_self');
     });
@@ -140,9 +136,7 @@ SLIDE PAGE
     });*/
 
    
-/****** 
-BURGER 
-*****/
+/* ============================= BURGER ================================ */
     
     function animateHamburger() {
         $('#hamburger-button').toggleClass('open');
@@ -155,9 +149,7 @@ BURGER
         slideMenu();
     });
     
-/****** 
-KEYDOWN 
-*****/
+/* ======================================= KEYDOWN =============================== */
     var show = ['Hello', 'there', '!', '<br>', "I am", '<a href="images/CV-CindyCastano.pdf" target="_blank" style="color:#40ffbf">Cindy</a>', 'Castano,', '<br>', 'a', "graphic", '&', "web", "designer", 'based', 'in', 'Paris.', "I'm", 'passionate', 'about', 'print,', "design,", 'and', 'digital.', 'I', 'like', 'to', "mix", 'both', 'to', 'create', 'solutions', 'that', 'add', 'value.', '<br>', "Let's", 'get', 'in', 'touch', 'for', 'any', 'project', 'inquiries', '<br>', '>> just', 'drop', 'me a', '<a href="mailto:castano.cindy1@gmail.com" style="color:#40ffbf"> line</a>','.'], i = 0, updateHey = function () {
         if (i < show.length) {
             document.getElementById('hey').innerHTML += show[i] + ' ';
@@ -171,83 +163,5 @@ KEYDOWN
         updateHey();
     });
  
-
-/*********** 
-SLIDER WORKS 
-***********/
-
-    $('#infos').on('click', function () {
-        if ($('.headerInfos').is(':hidden')) {
-            $('.headerInfos').slideDown('slow');
-            $(this).find('#plus').text('-');
-        } else {
-            $('.headerInfos').slideUp('fast');
-            $(this).find('#plus').text('+');
-        }
-    });
-    
-    var pos = 0,
-        totalSlides = $('#slider-content ul li').length,
-        sliderWidth = $('#slider-content').width();
-    
- /*********** PAGINATION ************/
-      
-    function pagination() {
-        $('#pagination-wrap ul li').removeClass('active');
-        $('#pagination-wrap ul li:eq("pos +")').addClass('active');
-    }
-         
-    $.each($('#slider-content ul li'), function () {
-        var li = document.createElement('li');
-        $('#pagination-wrap ul').append(li);
-	});
-	pagination();
- 
-/************ SLIDE RIGHT *************/
-	
-    function slideRight() {
-        pos += 1;
-   
-        if (pos === totalSlides) { pos = 0; }
-        $('#slider-content ul#slider').animate({'left': -(sliderWidth * pos)}, 300);
-        pagination();
-    }
-    
-    $('#slider-content ul#slider').width(sliderWidth * totalSlides);
-	$('#next').click(function () {
-		slideRight();
-	});
-
-/*********** SLIDE LEFT ************/
-    
-    function slideLeft() {
-        pos -= 1;
-        if (pos === -1) {pos = totalSlides - 1; }
-        $('#slider-content ul#slider').animate({'left': -(sliderWidth * pos)}, 300);
-        pagination();
-    }
-    
-    $('#prev').click(function () {
-		slideLeft();
-	});
-
-/*********** 
-CONTACT FORM 
-***********/
-    function openmail() {
-        $('#form').css('display', 'block');
-        $('#form').animate({opacity : 1});
-    }
-    $('#mail').click(function () {
-        openmail();
-    });
-    function closemail() {
-        $('#form').css('display', 'none');
-        $('#form').animate({opacity : 0});
-    }
-    $('#close').click(function () {
-        closemail();
-    });
-    
     toView(getH());
 });

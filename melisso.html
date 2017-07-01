@@ -14,61 +14,40 @@
     <meta name="author" content="Castano Cindy">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/work.css" type="text/css">
-    <link rel="stylesheet" href="css/media-queries.css" type="text/css">
+    <link rel="stylesheet" href="css/work-queries.css" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700,100,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
 </head>
 <body>
+<header>
 
-             <div id="goback"> 
-             <span></span>
-             <span></span>
-              </div>
-             
-            
-             
-    <div id="txt"> <!-- GLITCH --> 
-        <div class="glitch top">Melissopoulos grec product</div>
-        <div class="glitch bottom">Melissopoulos grec product</div>
-    </div> <!-- FIN GLITCH -->
+        <div id="goback"> 
+        <img src="images/icons/back-button.png" alt="back button">
+        </div>
+        <h6>back</h6>
         
-    <div class="wrapSlider"> <!-- SLIDER --> 
-           
-        <div class="slider-header"><!-- SLIDER HEADER -->
-             <div id="infos"><span id="plus">+</span></div>
-                <div id="worksNav">
-                    <span id="prev">&lt;</span>
-                    <span id="next">></span>
-                </div>
-        </div> 
-        <div class="headerInfos">
-            <p>Melissopoulos is a new brand of grec product as honey, oil olive and olives. <br>
-            I was in charge of the branding. <br>
-            Client : Melissopoulos </p>  
-        </div>
+        <div class="title">
+            <h1>melissopoulos <br>grec product</h1>
+            <span></span>
+        </div>   
+    
+    </header>
             
-        <div id="slider-content"> <!-- SLIDER CONTENT -->
-            <ul id="slider">
-                <li><img src="images/Melissopoulos/logo.jpg" alt="logo of Melissopoulos"></li>    
-                <li><img src="images/Melissopoulos/vue1.jpg" alt="branding of melissopoulos"></li>
-                <li><img src="images/Melissopoulos/vue2.jpg" alt="flyer melissopoulos"></li>
-                <li><img src="images/Melissopoulos/vue3.jpg" alt="flyer melissopoulos"></li>
-            </ul>
-
-            <!--controls--> 
-            <div id="pagination-wrap">
-                <ul>
-                </ul>
-            </div>
-            <!--controls-->  
+    <main>
+    
+       <!-- =============================== DESCRIPTION ==================================== -->
+       
+        <div class="intro">   
+    
+            <h2>Description</h2>
+       
+            <p class="description"> Melissopoulos is a new brand of grec product as honey, oil olive and olives. <br>I was in charge of the branding. <br>Client : Melissopoulos </p>
+        
         </div>
-  
-    </div>
-    <div id="queriesslider">
-        <p>Melissopoulos is a new brand of grec product as honey, oil olive and olives. <br>
-            I was in charge of the branding. <br>
-            Client : Melissopoulos  </p>
+        
+        <!-- =============================== PROJECT IMG ==================================== -->
+        
         <div id="flexwork">
             <img src="images/Melissopoulos/768-logo.jpg" alt="logo melissopoulos"> 
             <img src="images/Melissopoulos/768-logo2.jpg" alt="logo melissopoulos">
@@ -76,9 +55,16 @@
             <img src="images/Melissopoulos/768-vue2.jpg" alt="front flyer">
             <img src="images/Melissopoulos/768-vue3.jpg" alt="back flyer">
         </div>
-    </div>
-
-<script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+        
+        <!-- =============================== PROJECT NAV ==================================== -->
+        
+        <div class="previous"><a href="elixir.html"><img src="images/icons/previous.png" alt="previous button" class="projectNav"></a><h5>Previous <br> project</h5></div>
+        <div class="next"><a href="photo.html"><img src="images/icons/next.png" alt="next button" class="projectNav"></a><h5>Next <br> project</h5></div>
+        
+</main> 
+             
+        
+<script   src="js/jquery-3.2.1.min.js"></script>
 <script src="js/TweenMax.min.js"></script>
 <script src="js/moteur.js"></script> 
 </body>
