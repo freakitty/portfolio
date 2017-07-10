@@ -153,6 +153,10 @@ main{
     background-color: #ec6525;
 }
 
+.nine{
+    background-color: #222;
+}
+
 .elixir{
     background: url(../images/elixir/bg-home.png);
     height: 400px;
@@ -192,3 +196,5 @@ h5{
     padding-top: 8px;
     font-size: 0.6em;
 }
+
+em{color: #40ffbf}
