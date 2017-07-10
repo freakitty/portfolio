@@ -65,8 +65,12 @@ header{
     height: 400px; 
 }
 
+.intro{
+    height: 250px;
+}
+
 .description{
-    margin-top: 10px;
+    padding: 20px 0px 20px 0px;
     color: #999;
     font-size: 0.8em;
     width: 500px;
@@ -90,23 +94,75 @@ h2{
     color: #313332;  
 }
 
+.button a{
+    text-decoration: none;  
+    color: #777;
+    font-size: 0.7em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 3px;
+}
+
+.button{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 25PX;
+    cursor: pointer;
+    border-radius: 5px 5px 5px 5px;
+    border: 3px solid #40ffbf;
+    box-shadow: inset 0px -2px 0px #40ffbf;
+    transition: all .2s ease 0s;
+}
+
+.button:hover{
+    box-shadow:inset 0px -35px 0px #40ffbf;
+}
+
 main{
     background-color: #fff;
 }
+
 
 #flexwork{
     position: relative;
     left: 50%;
     top: 10%;
     transform: translateX(-50%);
-    max-width: 40%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;   
+    justify-content: space-around;
 }
 
-#flexwork>img{margin: 20px auto;}
+#logoSed{
+    margin: 50px 0 50px 0;
+}
 
+.wrap{
+    height: 300px;
+    width: 100%;
+}
+.sed{
+    background-color: #ffde00;
+}
+
+.lau{
+    background-color: #ec6525;
+}
+
+.elixir{
+    background: url(../images/elixir/bg-home.png);
+    height: 400px;
+}
+.wrap img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .projectNav{
     width: 30%;
     transition: .3s ease;
