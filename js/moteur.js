@@ -158,26 +158,6 @@ $(function () {
         $('#hey').css('display', 'block');
         updateHey();
     });
-    
-/* ================================= PARALAX ===========================
-
-    $(window).scroll(function () {
-        $('.project1').css({'right': function (index, value) {return 199 + $(window).scrollTop() * 0.7; }});
-        $('.project2').css({'top': function (index, value) {return 50 - $(window).scrollTop() * 0.4; }});
-        $('.project3').css({'top': function (index, value) {return 50 - $(window).scrollTop() * 0.5; }});
-        $('.project4').css({'top': function (index, value) {return 50 - $(window).scrollTop() * 0.5; }});
-    });
-    
-    
-    
-    
-    ===== */
-    
-    
-    
  
     toView(getH());
-    
-    
-    
 });

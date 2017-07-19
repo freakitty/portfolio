@@ -89,6 +89,8 @@ body{font-family: 'Roboto Mono'; overflow: hidden;}
     z-index: 999;
 }
 
+/* =============================== MAIN NAV ================================= */
+
 nav{
     position: relative;
     height: 100%;
@@ -103,8 +105,6 @@ nav{
 div{
     display: block;
 }
-
-/* =============================== MAIN NAV ================================= */
 
 ul>li>a{
     text-decoration: none;
