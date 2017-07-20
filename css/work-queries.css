@@ -23,7 +23,7 @@
     .next{right: 0px; width: 60px;}
 }
 
-@media screen and (max-width:320px){
+@media screen and (max-width:380px){
     header{height: 160px;}
     .title h1{font-size: 2em;}
     .title span{height: 15px; top: -15px;}
