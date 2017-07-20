@@ -79,8 +79,6 @@ header{
     transform: translateX(-50%);
     font-weight: 400;
     line-height: 1.3em;
-    column-count: 2;
-    column-gap: 3em;
     text-align: justify;
 }
 
@@ -126,7 +124,6 @@ main{
     background-color: #fff;
 }
 
-
 #flexwork{
     position: relative;
     left: 50%;
@@ -135,6 +132,12 @@ main{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+}
+
+#flexwork img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 #logoSed{
@@ -167,6 +170,7 @@ main{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .projectNav{
     width: 30%;
     transition: .3s ease;

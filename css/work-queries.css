@@ -1,0 +1,35 @@
+
+@media screen and (max-width:768px){
+    #goback{margin: 20px;}
+    .title h1{font-size: 4em;}
+    header{height: 300px;}
+}
+
+@media screen and (max-width:600px){ 
+    header{height: 250px;}
+    .title h1{font-size: 3em;}
+    .title span{height: 20px; top: -20px;}
+    .description{width: 400px;}
+}   
+    
+@media screen and (min-width:480px){
+    .description{column-count: 2;column-gap: 3em;}
+}
+
+@media screen and (max-width:480px){  
+    .description{width: 250px;}
+    .intro{height: 300px;}
+    .previous{left: 0px; width: 60px;}
+    .next{right: 0px; width: 60px;}
+}
+
+@media screen and (max-width:320px){
+    header{height: 160px;}
+    .title h1{font-size: 2em;}
+    .title span{height: 15px; top: -15px;}
+    #goback img{width: 30px;}
+    h2{font-size: 1em;}
+    .description{font-size: 0.6em; width: 200px;}
+    .intro{height: 250px;}
+    h5{font-size: 0.4em;}
+}

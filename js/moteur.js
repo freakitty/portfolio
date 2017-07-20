@@ -158,6 +158,7 @@ $(function () {
         $('#hey').css('display', 'block');
         updateHey();
     });
+    
  
     toView(getH());
 });
