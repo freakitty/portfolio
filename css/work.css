@@ -79,7 +79,11 @@ header{
     transform: translateX(-50%);
     font-weight: 400;
     line-height: 1.3em;
-    text-align: justify;
+    
+}
+
+b{
+    color: #ccc;
 }
 
 h2{
