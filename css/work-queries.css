@@ -3,6 +3,22 @@
     #goback{margin: 20px;}
     .title h1{font-size: 4em;}
     header{height: 300px;}
+    .wrap {height: 200px;}
+    .presentation img{width:600px;}
+    .lau img{width: 400px;}
+    .sed img{width: 130px;}
+    .elixir img{width: 300px;}
+    .melisso img{width: 500px;}
+    .melisso, .f10, .khi{margin-bottom: 60px;}
+    .f10 img{width: 400px;}
+    .nine img{width: 80px;}
+    .nangis img{width: 200px;}
+    .afhy img{width: 200px;}
+    .dc img{width: 150px;}
+    .bottle span{width: 100px; height: 100px;}
+    .dc113 img{width: 300px;}
+    .khi img{width: 100px;}
+    
 }
 
 @media screen and (max-width:600px){ 
@@ -32,4 +48,16 @@
     .description{font-size: 0.6em; width: 200px;}
     .intro{height: 250px;}
     h5{font-size: 0.4em;}
+    .lau img{width: 270px;}
+    #logoSed{width: 200px;}
+    .mockup{width: 100%;}
+    .elixir img{width: 200px;}
+    .bottle img{width: 200px; height: 200px;}
+    .melisso img, .milky img, .presentation img{width: 300px;}
+    .presentation{height:100px; }
+    .f10 img,.dc113 img{width: 250px;}
+    .melisso, .f10, .khi{margin-bottom: 10px;}
+    .afhy img{width: 150px;}
+    .bottle span{width: 50px; height: 50px; font-size: 8px;}
+    .bgvid{width: 60%; top: 50px;}
 }

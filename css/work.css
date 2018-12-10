@@ -130,18 +130,23 @@ main{
 
 #flexwork{
     position: relative;
-    left: 50%;
+    max-width: unset;
+    margin: auto;
+    padding: 0;
+    width: 50%;
+    display: block;
+   /* left: 50%;
     top: 10%;
     transform: translateX(-50%);
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
     justify-content: space-around;
 }
 
 #flexwork img{
-    max-width: 100%;
+   max-width: 100%;
     height: auto;
-    object-fit: contain;
+   object-fit: contain;
 }
 
 .shadowpic{
@@ -149,14 +154,62 @@ main{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
 }
+*/
+}
 
+.flex_inner{
+    overflow: hidden;
+    display: block;
+    position: relative;
+    max-width: 1080px;
+    margin: auto;
+    margin-bottom: 25px;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.shadow{
+    opacity: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.shadowpic{
+    width: 100%;
+    max-width: none;
+    height: auto;
+}
+
+.mockup{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: none;
+    height: auto;
+}
 #logoSed{
-    margin: 50px 0 50px 0;
+    margin: 20px 0 20px 0;
+    width: 300px;
 }
 
 .wrap{
     height: 300px;
     width: 100%;
+}
+.bottle{
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+     max-width: none;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .sed{
     background-color: #ffde00;
@@ -164,21 +217,100 @@ main{
 
 .lau{
     background-color: #ec6525;
+    margin-bottom: 20px;
+}
+. lau img{
+    width: 500px;
 }
 
-.nine{
+.nine, .nangis{
     background-color: #222;
 }
 
+.nangis img{
+    width: 350px;
+}
+
+.milky img{
+    width: 500px;
+}
+
+.melisso{
+    height: 400px;
+}
 .elixir{
     background: url(../images/elixir/bg-home.png);
-    height: 400px;
+    height: 300px;
+}
+.elixir img{
+    width: 400px;
+}
+.f10 img{
+    width: 600px;
+}
+.mockup_mobile{
+    width: 80%;
+}
+.afhy{
+    background: #631891;
+}
+.afhy img{
+    width: 300px;
 }
 .wrap img{
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.dc, .dc113{
+    background: #000;
+}
+.dc img{
+    width: 300px;
+}
+.dc113{
+    height: 450px;
+}
+.dc113 img{
+    width: 500px;
+}
+.bottle span{
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+.bottle span:first-child{
+    background: #000;
+    color: #FFF;
+}
+.bottle span:nth-child(2){
+    background: #00FF00;
+}
+.bottle span:last-child{
+    background: #CCC;
+}
+
+.khi{
+    background: url(../images/khi/fond_couverture_dessin.png);
+    background-repeat: repeat;
+}
+.khi img{
+    width: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+.presentation{height: 200px;}
+
+.bgvid{
+    position: relative;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: auto;
 }
 
 .projectNav{
