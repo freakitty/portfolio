@@ -12,7 +12,7 @@
     .melisso, .f10, .khi{margin-bottom: 60px;}
     .f10 img{width: 400px;}
     .nine img{width: 80px;}
-    .nangis img{width: 200px;}
+    .nangis img, .valony img{width: 200px;}
     .afhy img{width: 200px;}
     .dc img{width: 150px;}
     .bottle span{width: 100px; height: 100px;}
@@ -56,7 +56,7 @@
     .melisso img, .milky img, .presentation img{width: 300px;}
     .presentation{height:100px; }
     .f10 img,.dc113 img{width: 250px;}
-    .melisso, .f10, .khi{margin-bottom: 10px;}
+    .melisso, .f10, .khi, .valony{margin-bottom: 10px;}
     .afhy img{width: 150px;}
     .bottle span{width: 50px; height: 50px; font-size: 8px;}
     .bgvid{width: 60%; top: 50px;}

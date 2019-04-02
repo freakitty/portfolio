@@ -79,7 +79,6 @@ header{
     transform: translateX(-50%);
     font-weight: 400;
     line-height: 1.3em;
-    
 }
 
 b{
@@ -223,11 +222,11 @@ main{
     width: 500px;
 }
 
-.nine, .nangis{
+.nine, .nangis, .valony{
     background-color: #222;
 }
 
-.nangis img{
+.nangis img, .valony img{
     width: 350px;
 }
 
@@ -237,6 +236,7 @@ main{
 
 .melisso{
     height: 400px;
+    margin-bottom: 50px;
 }
 .elixir{
     background: url(../images/elixir/bg-home.png);
