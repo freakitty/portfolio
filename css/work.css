@@ -222,12 +222,16 @@ main{
     width: 500px;
 }
 
-.nine, .nangis, .valony{
+.nine, .nangis, .valony, .c2{
     background-color: #222;
 }
 
 .nangis img, .valony img{
     width: 350px;
+}
+
+.c2 img{
+    width: 200px;
 }
 
 .milky img{
