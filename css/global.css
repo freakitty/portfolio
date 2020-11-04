@@ -92,8 +92,10 @@ body{font-family: 'Roboto Mono'; overflow: hidden;}
 /* =============================== MAIN NAV ================================= */
 
 nav{
-    position: relative;
+    position: absolute;
     height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 #menu{
@@ -149,7 +151,7 @@ ul>li>a{
 }
 
 #logo{
-    position: fixed;
+    position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -263,6 +265,7 @@ h3{
     position: absolute;
     background-color: #40ffbf;
     top: -100%;
+    overflow: hidden;
 }
 
 #works.open{top: 0;}
@@ -358,6 +361,7 @@ h4{
     position: absolute;
     background-color: #fff;
     left: -100%; 
+    overflow: hidden;
 }
 
 /* =============================== CONSOLE =================== */
@@ -421,6 +425,7 @@ h4{
     position: absolute;
     background-color: #282a29;
     left: 100%;
+    overflow: hidden;
 }
 
 #flexitude{
